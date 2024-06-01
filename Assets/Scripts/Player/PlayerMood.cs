@@ -20,7 +20,7 @@ public class PlayerMood : MonoBehaviour
     [SerializeField] private Slider _moodSlider;
 
     private Action _onMoodValueChanged;
-    private Action _onMoodChanged;
+    private Action<Mood> _onMoodChanged;
 
     private Mood Mood
     {
@@ -28,7 +28,7 @@ public class PlayerMood : MonoBehaviour
         set
         {
             _mood = value;
-            _onMoodChanged?.Invoke();
+            _onMoodChanged?.Invoke(value);
         }
     }
 
@@ -91,9 +91,9 @@ public class PlayerMood : MonoBehaviour
         _moodSlider.value = _moodLevel;
     }
 
-    public void HandleMoodChanged()
+    public void HandleMoodChanged(Mood mood)
     {
-        Debug.Log(_mood);
+        Debug.Log(mood);
     }
 }
 
