@@ -9,6 +9,9 @@ namespace cherrydev
         [SerializeField] private TextMeshProUGUI dialogNameText;
         [SerializeField] private TextMeshProUGUI dialogText;
         [SerializeField] private Image dialogCharacterImage;
+        [SerializeField] private Image dialogCharacterImage1;
+        [SerializeField] private Color speakColor;
+        [SerializeField] private Color silentColor;
 
         /// <summary>
         /// Setting dialogText max visible characters to zero
@@ -31,7 +34,7 @@ namespace cherrydev
         /// Assigning dialog name text, character image sprite and dialog text
         /// </summary>
         /// <param name="name"></param>
-        public void Setup(string name, string text, Sprite sprite)
+        public void Setup(string name, string text, Sprite sprite, Sprite sprite1)
         {
             dialogNameText.text = name;
             dialogText.text = text;
@@ -42,10 +45,22 @@ namespace cherrydev
                     dialogCharacterImage.color.g, dialogCharacterImage.color.b, 0);
                 return;
             }
+            
+            if (sprite1 == null)
+            {
+                dialogCharacterImage1.color = new Color(dialogCharacterImage.color.r,
+                    dialogCharacterImage1.color.g, dialogCharacterImage.color.b, 0);
+                return;
+            }
 
-            dialogCharacterImage.color = new Color(dialogCharacterImage.color.r,
-                    dialogCharacterImage.color.g, dialogCharacterImage.color.b, 255);
+            // dialogCharacterImage.color = new Color(dialogCharacterImage.color.r,
+            //         dialogCharacterImage.color.g, dialogCharacterImage.color.b, 255);
+
+            dialogCharacterImage.color = speakColor;
             dialogCharacterImage.sprite = sprite;
+
+            dialogCharacterImage1.color = silentColor;
+            dialogCharacterImage1.sprite = sprite1;
         }
 
         /// <summary>
@@ -54,6 +69,27 @@ namespace cherrydev
         public void IncreaseMaxVisibleCharacters()
         {
             dialogText.maxVisibleCharacters++;
+        }
+
+        public void SwapImageSpeaker()
+        {
+            if (dialogCharacterImage.color == speakColor)
+            {
+                dialogCharacterImage.color = silentColor;
+            }
+            else
+            {
+                dialogCharacterImage.color = speakColor;
+            }
+            
+            if (dialogCharacterImage1.color == speakColor)
+            {
+                dialogCharacterImage1.color = silentColor;
+            }
+            else
+            {
+                dialogCharacterImage1.color = speakColor;
+            }
         }
     }
 }

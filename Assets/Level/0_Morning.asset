@@ -16,8 +16,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 626
-    y: 48
+    x: 872
+    y: 97
     width: 190
     height: 155
   isDragging: 0
@@ -26,6 +26,7 @@ MonoBehaviour:
     characterName: Apri
     text: Baik
     characterSprite: {fileID: 0}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 2906667744061415270}
   childNode: {fileID: 2639209669725629943}
   isExternalFunc: 1
@@ -46,8 +47,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 627
-    y: 272
+    x: 873
+    y: 321
     width: 190
     height: 155
   isDragging: 0
@@ -56,6 +57,7 @@ MonoBehaviour:
     characterName: Apri
     text: Gajelas
     characterSprite: {fileID: 0}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 2906667744061415270}
   childNode: {fileID: -2032606943639465411}
   isExternalFunc: 1
@@ -76,8 +78,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 932
-    y: 276
+    x: 1178
+    y: 325
     width: 190
     height: 135
   isDragging: 0
@@ -86,6 +88,7 @@ MonoBehaviour:
     characterName: Elma
     text: Gelooooo
     characterSprite: {fileID: 0}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: -8075172800956658289}
   childNode: {fileID: 0}
   isExternalFunc: 0
@@ -106,16 +109,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 53
-    y: 158
+    x: 299
+    y: 207
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 0
+  isSelected: 1
   sentence:
     characterName: Apri
     text: Halo!
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   parentNode: {fileID: 3757326239569596741}
   childNode: {fileID: 2906667744061415270}
   isExternalFunc: 0
@@ -158,8 +162,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 937
-    y: 46
+    x: 1183
+    y: 95
     width: 190
     height: 135
   isDragging: 0
@@ -168,6 +172,7 @@ MonoBehaviour:
     characterName: Elma
     text: Oke
     characterSprite: {fileID: 0}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: -8972974990446360945}
   childNode: {fileID: 0}
   isExternalFunc: 0
@@ -188,8 +193,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 336
-    y: 162
+    x: 582
+    y: 211
     width: 190
     height: 135
   isDragging: 0
@@ -217,8 +222,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -247
-    y: 156
+    x: -1
+    y: 205
     width: 190
     height: 135
   isDragging: 0
@@ -226,7 +231,8 @@ MonoBehaviour:
   sentence:
     characterName: Elma
     text: Hi!
-    characterSprite: {fileID: 0}
+    characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: -1204962948731080100}
   isExternalFunc: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace cherrydev
@@ -10,6 +11,11 @@ namespace cherrydev
         [Header("NODE PANELS")]
         [SerializeField] private SentencePanel dialogSentensePanel;
         [SerializeField] private AnswerPanel dialogAnswerPanel;
+
+        private void Start()
+        {
+            dialogBehaviour.BindExternalFunction("Swap", dialogSentensePanel.SwapImageSpeaker);
+        }
 
         private void OnEnable()
         {

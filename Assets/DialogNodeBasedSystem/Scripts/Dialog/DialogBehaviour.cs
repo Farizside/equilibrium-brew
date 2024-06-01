@@ -38,7 +38,7 @@ namespace cherrydev
 
         public event Action OnSentenceNodeActive;
 
-        public event Action<string, string, Sprite> OnSentenceNodeActiveWithParameter;
+        public event Action<string, string, Sprite, Sprite> OnSentenceNodeActiveWithParameter;
 
         public event Action OnAnswerNodeActive;
 
@@ -167,7 +167,7 @@ namespace cherrydev
 
             OnSentenceNodeActive?.Invoke();
             OnSentenceNodeActiveWithParameter?.Invoke(sentenceNode.GetSentenceCharacterName(), sentenceNode.GetSentenceText(),
-                sentenceNode.GetCharacterSprite());
+                sentenceNode.GetCharacterSprite(), sentenceNode.GetCharacterSprite1());
 
             if (sentenceNode.IsExternalFunc())
             {
