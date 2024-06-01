@@ -22,7 +22,7 @@ public class PlayerMood : MonoBehaviour
     private Action _onMoodValueChanged;
     private Action<Mood> _onMoodChanged;
 
-    private Mood Mood
+    public Mood Mood
     {
         get => _mood;
         set

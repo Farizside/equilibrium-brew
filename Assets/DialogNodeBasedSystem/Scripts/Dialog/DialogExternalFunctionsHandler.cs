@@ -12,6 +12,7 @@ namespace cherrydev
 
         public ExternalFunction CallExternalFunction(string funcName)
         {
+            string[] splitArray =  funcName.Split(funcName,char.Parse(","));
             if (externals.ContainsKey(funcName))
             {
                 ExternalFunction external = externals[funcName];

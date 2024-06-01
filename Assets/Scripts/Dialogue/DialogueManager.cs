@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogNodeGraph dialogue)
     {
+        _dialogBehaviour.BindExternalFunction("Mood", GetMood);
         _dialogBehaviour.BindExternalFunction("Manic", ManicResponse);
         _dialogBehaviour.BindExternalFunction("Depress", DepressResponse);
 
@@ -40,5 +41,10 @@ public class DialogueManager : MonoBehaviour
     public void DepressResponse()
     {
         _player.DepressMood();
+    }
+
+    public void GetMood()
+    {
+        // To Do: Set Character Sprite Base on Mood
     }
 }
