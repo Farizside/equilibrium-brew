@@ -712,8 +712,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5764e7aaa0baf449f5f69edd1eea74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mood: 0
   _moodLevel: 0
   _moodSwingLevel: 0.2
+  _manicThreshold: 0.4
+  _depressThreshold: -0.4
   _moodSlider: {fileID: 192701543}
 --- !u!4 &1662187683
 Transform:
