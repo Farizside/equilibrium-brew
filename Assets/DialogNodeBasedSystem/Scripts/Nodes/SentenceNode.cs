@@ -69,6 +69,11 @@ namespace cherrydev
             return sentence.characterSprite;
         }
 
+        public Sprite GetCharacterSprite1()
+        {
+            return sentence.characterSprite1;
+        }
+
         /// <summary>
         /// Returns the value of a isExternalFunc boolean field
         /// </summary>
