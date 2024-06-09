@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class BuildingController : MonoBehaviour{
@@ -9,11 +10,18 @@ public class BuildingController : MonoBehaviour{
     public int idxBuilding;
     public string buildingScene;
     private MapSystem _MapSystem;
+
+    [SerializeField] private string _buildingName;
+
+    private StoryManager _storyManager;
     // Start is called before the first frame update
     void Start()
     {
         _MapSystem = MapSystem.Instance;
-        pointer.SetActive(_MapSystem.currentBuilding == idxBuilding);
+        _storyManager = StoryManager.Instance;
+        
+        // pointer.SetActive(_MapSystem.currentBuilding == idxBuilding);
+        pointer.SetActive(_MapSystem.currentBuildingName == _buildingName);
     }
 
 
@@ -31,6 +39,16 @@ public class BuildingController : MonoBehaviour{
     private void OnMouseDown()
     {
         _MapSystem.currentBuilding = idxBuilding;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(buildingScene);
+        _MapSystem.currentBuildingName = _buildingName;
+
+        if (_storyManager.IdxStory == 1)
+        {
+            _storyManager.UpdateStory();
+            _storyManager.StartStory();
+        }
+        else
+        {
+            SceneManager.LoadScene(_buildingName);
+        }
     }
 }

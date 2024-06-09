@@ -9,6 +9,8 @@ public class StoryManager : MonoBehaviour
     [SerializeField] private StoryData _storyData;
     [SerializeField] private StoryData.Story _curStory;
     [SerializeField] private int _idxStory = 0;
+
+    public int IdxStory => _idxStory;
     
     private TimeManager _time;
     private DialogueManager _dialogue;
@@ -39,21 +41,23 @@ public class StoryManager : MonoBehaviour
 
     private void OnEnable()
     {
-        TimeManager.OnTimeChanged += UpdateStory;
+        // OnStoryFinished += UpdateStory;
     }
 
     private void OnDisable()
     {
-        TimeManager.OnTimeChanged -= UpdateStory;
+        // OnStoryFinished -= UpdateStory;
     }
 
-    private void UpdateStory()
+    public void UpdateStory()
     {
+        _curStory.IsFinished = true;
         _idxStory += 1;
+        
         try
         {
             _curStory = _storyData._story[_idxStory];
-            StartStory();
+            Debug.Log("Story updated");
         }
         catch(IndexOutOfRangeException ex)
         {
@@ -62,10 +66,9 @@ public class StoryManager : MonoBehaviour
         
     }
 
-    private void StartStory()
+    public void StartStory()
     {
         if (_curStory.IsFinished) return;
         _dialogue.StartDialogue(_curStory.Dialogue);
-        _curStory.IsFinished = true;
     }
 }

@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510388237}
   m_Layer: 0
-  m_Name: Building 1
+  m_Name: Pharmacy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -628,6 +628,7 @@ MonoBehaviour:
   pointer: {fileID: 1392313123}
   idxBuilding: 4
   buildingScene: Building1
+  _buildingName: Building1
 --- !u!61 &1036944623
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -774,6 +775,7 @@ MonoBehaviour:
   pointer: {fileID: 96919251}
   idxBuilding: 3
   buildingScene: Building1
+  _buildingName: Building1
 --- !u!61 &1066934615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -849,6 +851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentBuilding: 0
+  currentBuildingName: 
 --- !u!4 &1139625358
 Transform:
   m_ObjectHideFlags: 0
@@ -1132,7 +1135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 679081194}
   idxBuilding: 1
-  buildingScene: Building1
+  buildingScene: Pharmacy
+  _buildingName: Pharmacy
 --- !u!61 &1578364646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1278,7 +1282,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1401205524}
   idxBuilding: 2
-  buildingScene: Building1
+  buildingScene: Cafe
+  _buildingName: Cafe
 --- !u!61 &1619513333
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1334,7 +1339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1991771033}
   m_Layer: 0
-  m_Name: Building 2
+  m_Name: Cafe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
