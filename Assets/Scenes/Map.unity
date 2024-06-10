@@ -853,8 +853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentBuilding: 1
-  currentBuilding: 0
-  currentBuildingName: 
+  currentBuildingName: Pharmacy
 --- !u!4 &1139625358
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,9 +1243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 713050071}
   idxBuilding: 1
-  buildingScene: Building1
-  mAnimatorChar: {fileID: 1213656196}
   buildingScene: Pharmacy
+  mAnimatorChar: {fileID: 1213656196}
   _buildingName: Pharmacy
 --- !u!61 &1578364646
 BoxCollider2D:
@@ -1393,9 +1391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointer: {fileID: 1401205524}
   idxBuilding: 2
-  buildingScene: Building1
-  mAnimatorChar: {fileID: 1213656196}
   buildingScene: Cafe
+  mAnimatorChar: {fileID: 1213656196}
   _buildingName: Cafe
 --- !u!61 &1619513333
 BoxCollider2D:
