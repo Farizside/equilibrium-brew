@@ -38,29 +38,26 @@ namespace cherrydev
         {
             dialogNameText.text = name;
             dialogText.text = text;
+            
+            dialogCharacterImage.color = speakColor;
+            dialogCharacterImage.sprite = sprite;
+
+            dialogCharacterImage1.color = silentColor;
+            dialogCharacterImage1.sprite = sprite1;
 
             if (sprite == null)
             {
                 dialogCharacterImage.color = new Color(dialogCharacterImage.color.r,
                     dialogCharacterImage.color.g, dialogCharacterImage.color.b, 0);
-                return;
             }
             
             if (sprite1 == null)
             {
                 dialogCharacterImage1.color = new Color(dialogCharacterImage.color.r,
                     dialogCharacterImage1.color.g, dialogCharacterImage.color.b, 0);
-                return;
             }
 
-            // dialogCharacterImage.color = new Color(dialogCharacterImage.color.r,
-            //         dialogCharacterImage.color.g, dialogCharacterImage.color.b, 255);
-
-            dialogCharacterImage.color = speakColor;
-            dialogCharacterImage.sprite = sprite;
-
-            dialogCharacterImage1.color = silentColor;
-            dialogCharacterImage1.sprite = sprite1;
+            
         }
 
         /// <summary>

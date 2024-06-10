@@ -2,20 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class BuildingController : MonoBehaviour{
     public GameObject pointer;
     public int idxBuilding;
     public string buildingScene;
-    public Animator mAnimatorChar;
-    private MapSystem _mapSystem;
-    
+    private MapSystem _MapSystem;
+
+    [SerializeField] private string _buildingName;
+
+    private StoryManager _storyManager;
     // Start is called before the first frame update
     void Start()
     {
-        _mapSystem = MapSystem.Instance;
-        pointer.SetActive(_mapSystem.currentBuilding == idxBuilding);
+        _MapSystem = MapSystem.Instance;
+        _storyManager = StoryManager.Instance;
+        
+        // pointer.SetActive(_MapSystem.currentBuilding == idxBuilding);
+        pointer.SetActive(_MapSystem.currentBuildingName == _buildingName);
     }
 
 
@@ -32,19 +38,18 @@ public class BuildingController : MonoBehaviour{
 
     private void OnMouseDown()
     {
-        MoveCharAnimation(_mapSystem.currentBuilding,idxBuilding);
-        _mapSystem.currentBuilding = idxBuilding;
-        StartCoroutine(ChangeSceneFinisAnim());
-        // UnityEngine.SceneManagement.SceneManager.LoadScene(buildingScene);
-    }
+        _MapSystem.currentBuilding = idxBuilding;
+        _MapSystem.currentBuildingName = _buildingName;
 
-    IEnumerator ChangeSceneFinisAnim()
-    {
-        while (mAnimatorChar.GetCurrentAnimatorStateInfo(0).normalizedTime < 1f)
+        if (_storyManager.IdxStory == 1)
         {
-            yield return null;
+            _storyManager.UpdateStory();
+            _storyManager.StartStory();
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene(buildingScene);
+        else
+        {
+            SceneManager.LoadScene(_buildingName);
+        }
     }
     
     private void MoveCharAnimation(int currentBuilding, int gotoBuilding)

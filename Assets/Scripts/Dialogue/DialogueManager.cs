@@ -29,6 +29,7 @@ public class DialogueManager : MonoBehaviour
         _dialogBehaviour.BindExternalFunction("Mood", GetMood);
         _dialogBehaviour.BindExternalFunction("Manic", ManicResponse);
         _dialogBehaviour.BindExternalFunction("Depress", DepressResponse);
+        _dialogBehaviour.BindExternalFunction("Enter", MapSystem.Instance.EnterBuilding);
 
         _dialogBehaviour.StartDialog(dialogue);
     }
@@ -36,11 +37,13 @@ public class DialogueManager : MonoBehaviour
     public void ManicResponse()
     {
         _player.ManicMood();
+        _dialogBehaviour.CheckForDialogNextNode();
     }
 
     public void DepressResponse()
     {
         _player.DepressMood();
+        _dialogBehaviour.CheckForDialogNextNode();
     }
 
     public void GetMood()

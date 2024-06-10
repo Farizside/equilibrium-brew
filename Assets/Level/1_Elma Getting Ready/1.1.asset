@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2905854684755088672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 106
+    y: 171
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 1
+  sentence:
+    characterName: Elma
+    text: Ah, sudah pagi...
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 0}
+  parentNode: {fileID: 0}
+  childNode: {fileID: 74602100060360144}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: 1.1
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: -2905854684755088672}
+  - {fileID: 74602100060360144}
+  - {fileID: 1219025080572195240}
+  - {fileID: 3051047087254186836}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &74602100060360144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 417
+    y: 175
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: 'Aku harus siap-siap dulu nih. '
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 0}
+  parentNode: {fileID: -2905854684755088672}
+  childNode: {fileID: 1219025080572195240}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &1219025080572195240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 738
+    y: 190
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Kayanya sarapan dulu terus mandi deh
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 0}
+  parentNode: {fileID: 74602100060360144}
+  childNode: {fileID: 3051047087254186836}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3051047087254186836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1045
+    y: 192
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Hmm, sebelum ke cafe, ngapain dulu ya?
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 0}
+  parentNode: {fileID: 1219025080572195240}
+  childNode: {fileID: 0}
+  isExternalFunc: 0
+  externalFunctionName: 

@@ -16,8 +16,20 @@ MonoBehaviour:
   - Day: 0
     Time: 0
     IsFinished: 0
-    Dialogue: {fileID: 11400000, guid: d232ffb7b290674479121c4453aa2aba, type: 2}
+    Dialogue: {fileID: 11400000, guid: 9b73654a77197c144addda5d694ea633, type: 2}
   - Day: 0
-    Time: 1
+    Time: 0
     IsFinished: 0
-    Dialogue: {fileID: 11400000, guid: 9cdb2c2632749e44fa7a35d40c432610, type: 2}
+    Dialogue: {fileID: 11400000, guid: 1cb21afb5c0a51741a884020fba3361b, type: 2}
+  - Day: 0
+    Time: 0
+    IsFinished: 0
+    Dialogue: {fileID: 11400000, guid: 45e25150f55477748ad3e4d828c18e33, type: 2}
+  - Day: 0
+    Time: 0
+    IsFinished: 0
+    Dialogue: {fileID: 11400000, guid: 14a1050e7f36c53418dd5624e049c9b2, type: 2}
+  - Day: 0
+    Time: 0
+    IsFinished: 0
+    Dialogue: {fileID: 11400000, guid: dd7ef35f1d175574cb1625e68925d7df, type: 2}

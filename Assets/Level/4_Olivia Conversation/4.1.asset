@@ -1,0 +1,626 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8690032684451188293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -298
+    y: 86
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Hi, Ollie.
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 3795184451269401444}
+  childNode: {fileID: 7320349976002704230}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &-6151859448490363671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1139
+    y: 74
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Terus akhirnya tadi aku ngomel ke mereka
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 8517578481130802734}
+  childNode: {fileID: 6646301647994718336}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &-5981674923416748373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1564
+    y: 83
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Dia bilang kalo aku terlalu maksa mereka buat kerja
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 6646301647994718336}
+  childNode: {fileID: 6884626464546622494}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &-2989202140351890446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 422
+    y: 73
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Oh gitu.
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 3463826065420907651}
+  childNode: {fileID: 7422030501737916676}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &-793527418890537077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2716
+    y: -22
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Iya, yah. Kayanya habis ini aku bakal minta maaf ke mereka...
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 7277189059005596277}
+  childNode: {fileID: 2832300487808547031}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &-775399283978245513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 3814
+    y: 165
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Bisa dong! Aku buatkan Mint tea ya
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 469664655874453815}
+  childNode: {fileID: 0}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f741ea10ebcf842a91c9b871dd032a, type: 3}
+  m_Name: 4.1
+  m_EditorClassIdentifier: 
+  nodesList:
+  - {fileID: 3795184451269401444}
+  - {fileID: -8690032684451188293}
+  - {fileID: 7320349976002704230}
+  - {fileID: 3463826065420907651}
+  - {fileID: -2989202140351890446}
+  - {fileID: 7422030501737916676}
+  - {fileID: 8517578481130802734}
+  - {fileID: -6151859448490363671}
+  - {fileID: 6646301647994718336}
+  - {fileID: -5981674923416748373}
+  - {fileID: 6884626464546622494}
+  - {fileID: 6429819122559944769}
+  - {fileID: 7277189059005596277}
+  - {fileID: 7022134807015683767}
+  - {fileID: -793527418890537077}
+  - {fileID: 2832300487808547031}
+  - {fileID: 469664655874453815}
+  - {fileID: 8773124372333327138}
+  - {fileID: -775399283978245513}
+  nodeToDrawLineFrom: {fileID: 0}
+  linePosition: {x: 0, y: 0}
+--- !u!114 &469664655874453815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 3441
+    y: 154
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Oh iya, aku belum pesan apa-apa. Aku ingin teh yang bisa mendinginkan kepalaku.
+      Elma bisa bikinnya kan?
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 2832300487808547031}
+  childNode: {fileID: -775399283978245513}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &2832300487808547031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 3015
+    y: -15
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Iya lebih baik seperti itu
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: -793527418890537077}
+  childNode: {fileID: 469664655874453815}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3463826065420907651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 168
+    y: 80
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Aku baru buka, kok. Hari ini agak telat, sih.
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 7320349976002704230}
+  childNode: {fileID: -2989202140351890446}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &3795184451269401444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -575
+    y: 86
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Elma!
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 0}
+  childNode: {fileID: -8690032684451188293}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &6429819122559944769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1717f3c6dba9fa40844ddacac301510, type: 3}
+  m_Name: Answer Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2103
+    y: 110
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  answers:
+  - Kamu terlalu keras
+  - Pecat aja
+  parentSentenceNode: {fileID: 6884626464546622494}
+  childSentenceNodes:
+  - {fileID: 7277189059005596277}
+  - {fileID: 7022134807015683767}
+--- !u!114 &6646301647994718336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1356
+    y: 83
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Tapi tadi ada karyawan yang malah marah balik ke aku!
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: -6151859448490363671}
+  childNode: {fileID: -5981674923416748373}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &6884626464546622494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 1817
+    y: 90
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Padahal sebagai owner kan aku memang harus kaya gitu! Mereka yang ga bisa
+      ngerti!
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: -5981674923416748373}
+  childNode: {fileID: 6429819122559944769}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &7022134807015683767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2422
+    y: 251
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Karyawan kaya gitu suka seenaknya pasti. Mending dipecat aja!
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 6429819122559944769}
+  childNode: {fileID: 8773124372333327138}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7277189059005596277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2402
+    y: -10
+    width: 190
+    height: 135
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Elma
+    text: Mungkin kamu terlalu keras sama mereka. Kamu harus biarin mereka kerja
+      sesuai kemampuan mereka
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 6429819122559944769}
+  childNode: {fileID: -793527418890537077}
+  isExternalFunc: 0
+  externalFunctionName: 
+--- !u!114 &7320349976002704230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: -56
+    y: 79
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Aku lihat cafenya masih sepi.
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: -8690032684451188293}
+  childNode: {fileID: 3463826065420907651}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &7422030501737916676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 650
+    y: 74
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Ngomong-ngomong, dengerin deh!
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: -2989202140351890446}
+  childNode: {fileID: 8517578481130802734}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &8517578481130802734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 879
+    y: 68
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Aku tuh sebel banget sama karyawan aku! Mereka lambat banget kerjanya.
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 7422030501737916676}
+  childNode: {fileID: -6151859448490363671}
+  isExternalFunc: 1
+  externalFunctionName: Swap
+--- !u!114 &8773124372333327138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a32a464d8ccff4e40a60c45b40a1e648, type: 3}
+  m_Name: Sentence Node
+  m_EditorClassIdentifier: 
+  connectedNodesList: []
+  nodeGraph: {fileID: 11400000}
+  rect:
+    serializedVersion: 2
+    x: 2834
+    y: 249
+    width: 190
+    height: 155
+  isDragging: 0
+  isSelected: 0
+  sentence:
+    characterName: Olivia
+    text: Duh... Tapi dia itu karyawan terbaikku.  Mana bisa aku pecat dia
+    characterSprite: {fileID: 21300000, guid: 2936fcac3028d0b43ad4ff316b5d6ecd, type: 3}
+    characterSprite1: {fileID: 21300000, guid: 1e58fac2a4ac1db4ba99fb8bc446f63d, type: 3}
+  parentNode: {fileID: 7022134807015683767}
+  childNode: {fileID: 469664655874453815}
+  isExternalFunc: 1
+  externalFunctionName: Swap

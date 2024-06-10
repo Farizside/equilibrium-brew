@@ -22,7 +22,7 @@ namespace cherrydev
         private int maxAmountOfAnswerButtons;
 
         private bool isDialogStarted;
-        private bool isCurrentSentenceSkipped;
+        public bool isCurrentSentenceSkipped;
 
         public bool IsCanSkippingText
         {
@@ -285,7 +285,7 @@ namespace cherrydev
         /// <summary>
         /// Checking is next dialog node has a child node
         /// </summary>
-        private void CheckForDialogNextNode()
+        public void CheckForDialogNextNode()
         {
             if (currentNode.GetType() == typeof(SentenceNode))
             {
