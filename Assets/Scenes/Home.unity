@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 399128937}
   - component: {fileID: 399128936}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Map System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2cb81418033df14397e8908bf70ab2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentBuilding: 0
-  currentBuildingName: 
+  currentBuilding: 4
+  currentBuildingName: Home
 --- !u!4 &399128937
 Transform:
   m_ObjectHideFlags: 0

@@ -16,16 +16,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1394
-    y: 317.2002
+    x: 553.1998
+    y: 58.800278
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: First sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 4936782135289953885}
   childNode: {fileID: -7841181008643086002}
   isExternalFunc: 0
@@ -46,16 +47,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2898
-    y: 834.2002
+    x: 2057.2007
+    y: 575.8002
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Last sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 0}
   isExternalFunc: 0
@@ -76,16 +78,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1624
-    y: 325.2002
+    x: 783.19995
+    y: 66.80028
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Next to first sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: -8705819208441359274}
   childNode: {fileID: 4411136173186865135}
   isExternalFunc: 0
@@ -106,16 +109,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1623
-    y: 596.20026
+    x: 782.19995
+    y: 337.80035
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Next to third sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 8776957959574132249}
   childNode: {fileID: 4411136173186865135}
   isExternalFunc: 0
@@ -136,16 +140,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1392
-    y: 458.2002
+    x: 551.1998
+    y: 199.80052
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Second sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 4936782135289953885}
   childNode: {fileID: 4978805031079437192}
   isExternalFunc: 0
@@ -166,8 +171,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 908
-    y: 503.20026
+    x: 67.2001
+    y: 244.80052
     width: 190
     height: 155
   isDragging: 0
@@ -176,6 +181,7 @@ MonoBehaviour:
     characterName: cherrydev
     text: Hello, this is Dialog Node Based System
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 0}
   childNode: {fileID: 4936782135289953885}
   isExternalFunc: 1
@@ -224,16 +230,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1620
-    y: 747.1993
+    x: 779.19995
+    y: 488.79938
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Next to fourth sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 3563645847101711405}
   childNode: {fileID: 4411136173186865135}
   isExternalFunc: 0
@@ -254,16 +261,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 2061
-    y: 533.20026
+    x: 1220.2002
+    y: 274.80054
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Last sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 4411136173186865135}
   childNode: {fileID: 0}
   isExternalFunc: 0
@@ -284,16 +292,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1384
-    y: 747.1993
+    x: 543.1998
+    y: 488.79938
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Fourth sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 4936782135289953885}
   childNode: {fileID: 548517801765535934}
   isExternalFunc: 0
@@ -314,8 +323,8 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1855
-    y: 536.2002
+    x: 1014.1996
+    y: 277.8004
     width: 190
     height: 115
   isDragging: 0
@@ -341,10 +350,10 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1133
-    y: 496.2002
+    x: 292.19986
+    y: 237.80052
     width: 190
-    height: 175
+    height: 115
   isDragging: 0
   isSelected: 0
   answers:
@@ -374,16 +383,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1626
-    y: 458.2002
+    x: 785.19995
+    y: 199.80052
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Next to second sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: -5184584624021453599}
   childNode: {fileID: 4411136173186865135}
   isExternalFunc: 0
@@ -404,16 +414,17 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 1385
-    y: 602.20026
+    x: 544.1998
+    y: 343.80035
     width: 190
-    height: 135
+    height: 0
   isDragging: 0
   isSelected: 0
   sentence:
     characterName: cherrydev
     text: Third sentence
     characterSprite: {fileID: 21300000, guid: c03d0e70107745d48b9cc5f2abe74fe5, type: 3}
+    characterSprite1: {fileID: 0}
   parentNode: {fileID: 4936782135289953885}
   childNode: {fileID: -6005459696232394752}
   isExternalFunc: 0

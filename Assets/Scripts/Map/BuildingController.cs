@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class BuildingController : MonoBehaviour{
     public GameObject pointer;
     public int idxBuilding;
-    public string buildingScene;
     private MapSystem _mapSystem;
     public Animator mAnimatorChar;
     [SerializeField] private string _buildingName;
@@ -21,7 +20,6 @@ public class BuildingController : MonoBehaviour{
         _storyManager = StoryManager.Instance;
         
         pointer.SetActive(_mapSystem.currentBuilding == idxBuilding);
-        // pointer.SetActive(_mapSystem.currentBuildingName == _buildingName);
     }
 
 
@@ -58,7 +56,7 @@ public class BuildingController : MonoBehaviour{
         {
             yield return new WaitForSeconds(mAnimatorChar.runtimeAnimatorController.animationClips[0].length);
         }
-        SceneManager.LoadScene(buildingScene);
+        SceneManager.LoadScene(_buildingName);
     }
 
     private void MoveCharAnimation(int currentBuilding, int gotoBuilding)

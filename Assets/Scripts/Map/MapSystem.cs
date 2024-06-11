@@ -8,7 +8,6 @@ public class MapSystem : MonoBehaviour
 {
     public static MapSystem Instance;
     public int currentBuilding;
-
     public string currentBuildingName;
 
     private StoryManager _storyManager;
@@ -27,11 +26,14 @@ public class MapSystem : MonoBehaviour
 
     private void Start()
     {
+        currentBuildingName = "Home";
+        currentBuilding = 4;
         _storyManager = StoryManager.Instance;
     }
 
     public void EnterBuilding()
     {
+        Debug.Log("CEK");
         if (_storyManager.IdxStory == 2 && currentBuildingName == "Pharmacy")
         {
             _storyManager.UpdateStory();
