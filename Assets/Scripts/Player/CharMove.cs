@@ -8,27 +8,36 @@ using UnityEngine.SceneManagement;
 public class CharMove : MonoBehaviour
 {
     private MapSystem _mapSystem;
-    [SerializeField] Transform target;
+    private Transform target;
     private NavMeshAgent agent;
     [SerializeField] BuildingController[] Building;
 
     // Start is called before the first frame update
     void Start()
     {
+        _mapSystem = MapSystem.Instance;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        InitialCharPosition();
     }
 
     void InitialCharPosition()
     {
-        _mapSystem = MapSystem.Instance;
-        for (int i = 0; i < Building.Length; i++)
+        if (_mapSystem == null)
         {
-            BuildingController currentBuilding = Building[i];
+            Debug.LogError("MapSystem instance not found");
+            return;
+        }
+
+        foreach (var currentBuilding in Building)
+        {   
+            
             if (_mapSystem.currentBuilding == currentBuilding.idxBuilding)
             {
-                gameObject.transform.position = currentBuilding.transform.position;
+                Debug.Log("Setting initial position to building index: " + currentBuilding.idxBuilding);
+                agent.Warp(currentBuilding.transform.position); 
+                break;
             }
         }
     }
@@ -38,7 +47,6 @@ public class CharMove : MonoBehaviour
         yield return new WaitForSeconds(0.025f);
         Debug.Log (agent.remainingDistance);
         yield return new WaitUntil(() => agent.remainingDistance == 0);
-        Debug.Log ("ATTACK !!");
         SceneManager.LoadScene(sceneName);
     }
 }
