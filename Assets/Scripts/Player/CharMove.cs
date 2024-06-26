@@ -12,12 +12,16 @@ public class CharMove : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField] BuildingController[] Building;
 
+    private StoryManager _storyManager;
+
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+
+        _storyManager = StoryManager.Instance;
     }
 
     void InitialCharPosition()
@@ -39,6 +43,14 @@ public class CharMove : MonoBehaviour
         Debug.Log (agent.remainingDistance);
         yield return new WaitUntil(() => agent.remainingDistance == 0);
         Debug.Log ("ATTACK !!");
+        if (_storyManager.IdxStory == 2)
+        {
+            _storyManager.UpdateStory();
+        }
+        else if (_storyManager.IdxStory == 3)
+        {
+            _storyManager.UpdateStory();
+        }
         SceneManager.LoadScene(sceneName);
     }
 }

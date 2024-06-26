@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private PlayerMood _player;
 
     public static DialogueManager Instance;
+
+    public bool isInDialog;
     
     private void Awake()
     {
@@ -29,7 +31,6 @@ public class DialogueManager : MonoBehaviour
         _dialogBehaviour.BindExternalFunction("Mood", GetMood);
         _dialogBehaviour.BindExternalFunction("Manic", ManicResponse);
         _dialogBehaviour.BindExternalFunction("Depress", DepressResponse);
-        _dialogBehaviour.BindExternalFunction("Enter", MapSystem.Instance.EnterBuilding);
 
         _dialogBehaviour.StartDialog(dialogue);
     }

@@ -9,9 +9,8 @@ public class CafeHandler : MonoBehaviour
     {
         _storyManager = StoryManager.Instance;
 
-        if (_storyManager.IdxStory == 3)
+        if (_storyManager.IdxStory == 4)
         {
-            _storyManager.UpdateStory();
             _storyManager.StartStory();
         }
     }

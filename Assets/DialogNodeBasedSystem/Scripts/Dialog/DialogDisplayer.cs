@@ -68,6 +68,7 @@ namespace cherrydev
         {
             DisableDialogAnswerPanel();
             DisableDialogSentencePanel();
+            DialogueManager.Instance.isInDialog = false;
         }
 
         /// <summary>
