@@ -16,12 +16,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 544
-    y: 291
+    x: 700
+    y: 302
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Elma
     text: Hmm... sepertinya bukan ini yang harusnya aku beli.
@@ -47,12 +47,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 547
-    y: 138
+    x: 703
+    y: 149
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Elma
     text: Satu to-do list sudah selesai, kira-kira apa lagi ya yang harus aku kerjakan
@@ -97,12 +97,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: -91
-    y: 226
+    x: 65
+    y: 237
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   sentence:
     characterName: Elma
     text: Okay, toko... apa yang aku harus beli di toko
@@ -128,12 +128,12 @@ MonoBehaviour:
   nodeGraph: {fileID: 11400000}
   rect:
     serializedVersion: 2
-    x: 205
-    y: 227
+    x: 361
+    y: 238
     width: 190
     height: 135
   isDragging: 0
-  isSelected: 1
+  isSelected: 0
   answers:
   - a
   - b

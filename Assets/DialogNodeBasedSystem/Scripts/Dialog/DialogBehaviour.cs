@@ -91,6 +91,7 @@ namespace cherrydev
         public void StartDialog(DialogNodeGraph dialogNodeGraph)
         {
             isDialogStarted = true;
+            DialogueManager.Instance.isInDialog = true;
 
             if (dialogNodeGraph.nodesList == null)
             {

@@ -16,7 +16,7 @@ public class BuildingController : MonoBehaviour{
     void Start()
     {
         _mapSystem = MapSystem.Instance;
-        // _storyManager = StoryManager.Instance;
+        _storyManager = StoryManager.Instance;
         
         pointer.SetActive(_mapSystem.currentBuilding == idxBuilding);
     }
@@ -35,15 +35,12 @@ public class BuildingController : MonoBehaviour{
     {
         _mapSystem.currentBuilding = idxBuilding;
         _mapSystem.currentBuildingName = _buildingName;
-        // if (_storyManager.IdxStory == 1)
-        // {
-        //     _storyManager.UpdateStory();
-        //     _storyManager.StartStory();
-        // }
-        // else
-        // {
-            StartCoroutine(Char.ChangeSceneUntilReachTarget(gameObject.transform,_buildingName));
-        // }    
+        if (_storyManager.IdxStory == 1)
+        {
+            _storyManager.UpdateStory();
+            _storyManager.StartStory();
+        }
+        StartCoroutine(Char.ChangeSceneUntilReachTarget(gameObject.transform,_buildingName));
     }
     
 }

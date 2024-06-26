@@ -14,26 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _money: 0
   _stocks:
-  - key: Tea leaf
-    value: 0
+  - key: Tea Leaf
+    value: 1
     price: 3
   - key: Green Tea
-    value: 0
+    value: 1
     price: 5
   - key: Chamomile
-    value: 0
+    value: 1
     price: 7
   - key: Milk
-    value: 0
+    value: 1
     price: 1
   - key: Mint
-    value: 0
+    value: 1
     price: 6
   - key: Honey
-    value: 0
+    value: 1
     price: 2
   - key: Apple
-    value: 0
+    value: 1
+    price: 6
+  - key: Lavender
+    value: 1
     price: 6
   _medicines:
   - key: 

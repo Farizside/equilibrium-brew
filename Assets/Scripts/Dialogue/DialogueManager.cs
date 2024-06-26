@@ -7,9 +7,13 @@ public class DialogueManager : MonoBehaviour
 {
     [SerializeField] private DialogBehaviour _dialogBehaviour;
     [SerializeField] private PlayerMood _player;
+    
 
     public static DialogueManager Instance;
-    
+
+    public bool isInDialog;
+
+    public GameObject teaCanvas;
     private void Awake()
     {
         if (Instance != null) 
@@ -29,7 +33,7 @@ public class DialogueManager : MonoBehaviour
         _dialogBehaviour.BindExternalFunction("Mood", GetMood);
         _dialogBehaviour.BindExternalFunction("Manic", ManicResponse);
         _dialogBehaviour.BindExternalFunction("Depress", DepressResponse);
-        _dialogBehaviour.BindExternalFunction("Enter", MapSystem.Instance.EnterBuilding);
+        _dialogBehaviour.BindExternalFunction("Tea", MakeTea);
 
         _dialogBehaviour.StartDialog(dialogue);
     }
@@ -49,5 +53,10 @@ public class DialogueManager : MonoBehaviour
     public void GetMood()
     {
         // To Do: Set Character Sprite Base on Mood
+    }
+
+    public void MakeTea()
+    {
+        teaCanvas.SetActive(true);
     }
 }

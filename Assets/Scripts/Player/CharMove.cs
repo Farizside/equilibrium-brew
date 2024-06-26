@@ -13,6 +13,8 @@ public class CharMove : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField] BuildingController[] Building;
 
+    private StoryManager _storyManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class CharMove : MonoBehaviour
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         InitialCharPosition();
+        _storyManager = StoryManager.Instance;
     }
 
     void InitialCharPosition()
@@ -55,9 +58,14 @@ public class CharMove : MonoBehaviour
                 _animator.SetFloat("Y", velocity.y);
                 _animator.SetBool("isWalking",true);
             }
-            Debug.Log("Position: " + transform.position.x + ", " + transform.position.y);
-            Debug.Log("Velocity: " + velocity);
-
+             if (_storyManager.IdxStory == 2)
+            {
+                _storyManager.UpdateStory();
+            }
+            else if (_storyManager.IdxStory == 3)
+            {
+                _storyManager.UpdateStory();
+            }
             yield return null;
         }
         _animator.SetBool("isWalking",false);
