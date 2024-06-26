@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class CharMove : MonoBehaviour
 {
     private MapSystem _mapSystem;
+    private Animator _animator;
     private Transform target;
     private NavMeshAgent agent;
     [SerializeField] BuildingController[] Building;
@@ -16,6 +17,7 @@ public class CharMove : MonoBehaviour
     void Start()
     {
         _mapSystem = MapSystem.Instance;
+        _animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -44,9 +46,21 @@ public class CharMove : MonoBehaviour
     
     public IEnumerator ChangeSceneUntilReachTarget(Transform target, string sceneName){	
         agent.SetDestination(target.position);
-        yield return new WaitForSeconds(0.025f);
-        Debug.Log (agent.remainingDistance);
-        yield return new WaitUntil(() => agent.remainingDistance == 0);
+        while (agent.pathPending || agent.remainingDistance > agent.stoppingDistance)
+        {
+            Vector3 velocity = agent.velocity;
+            if (velocity.x != 0 || velocity.y != 0)
+            {
+                _animator.SetFloat("X", velocity.x);
+                _animator.SetFloat("Y", velocity.y);
+                _animator.SetBool("isWalking",true);
+            }
+            Debug.Log("Position: " + transform.position.x + ", " + transform.position.y);
+            Debug.Log("Velocity: " + velocity);
+
+            yield return null;
+        }
+        _animator.SetBool("isWalking",false);
         SceneManager.LoadScene(sceneName);
     }
 }
