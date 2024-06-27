@@ -47,7 +47,9 @@ public class CharMove : MonoBehaviour
         }
     }
     
-    public IEnumerator ChangeSceneUntilReachTarget(Transform target, string sceneName){	
+    public IEnumerator ChangeSceneUntilReachTarget(Transform target, string sceneName)
+    {
+        yield return new WaitUntil(() => DialogueManager.Instance.isInDialog == false);
         agent.SetDestination(target.position);
         while (agent.pathPending || agent.remainingDistance > agent.stoppingDistance)
         {
@@ -58,17 +60,17 @@ public class CharMove : MonoBehaviour
                 _animator.SetFloat("Y", velocity.y);
                 _animator.SetBool("isWalking",true);
             }
-             if (_storyManager.IdxStory == 2)
-            {
-                _storyManager.UpdateStory();
-            }
-            else if (_storyManager.IdxStory == 3)
-            {
-                _storyManager.UpdateStory();
-            }
             yield return null;
         }
         _animator.SetBool("isWalking",false);
+        if (_storyManager.IdxStory == 2)
+        {
+            _storyManager.UpdateStory();
+        }
+        else if (_storyManager.IdxStory == 3)
+        {
+            _storyManager.UpdateStory();
+        }
         SceneManager.LoadScene(sceneName);
     }
 }
