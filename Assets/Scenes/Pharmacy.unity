@@ -382,7 +382,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2612936108184445939, guid: 6427ebcb204bb244baa8cf5046865784, type: 3}
       propertyPath: m_text
-      value: Pharmacy
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 3154699703268930675, guid: 6427ebcb204bb244baa8cf5046865784, type: 3}
       propertyPath: m_Sprite

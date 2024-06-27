@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 [CreateAssetMenu]
 public class InventoryData : ScriptableObject
@@ -15,6 +17,7 @@ public class InventoryData : ScriptableObject
     public struct Stock
     {
         public string key;
+        public Sprite Image;
         public int value;
         public int price;
     }
