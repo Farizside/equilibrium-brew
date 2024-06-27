@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d002d6f2d19a8e48a62a619d26f6eaa
+guid: 0e653a7562a0e714c98681d9cd544248
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RADL_Book2_0
+      name: RADL_Book2 1_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 421
         y: 0
-        width: 76
-        height: 125
+        width: 314
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9405195e67ff8734c85ba5b530295833
-      internalID: 349777900
+      spriteID: a8fadc795710a7e4dab8b147629224f0
+      internalID: 696856776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RADL_Book2_1
+      name: RADL_Book2 1_4
       rect:
         serializedVersion: 2
-        x: 189
+        x: 800
         y: 0
-        width: 77
-        height: 138
+        width: 314
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f87c588e1fcd1c4a8e1c5a9724c890f
-      internalID: 1469296465
+      spriteID: 2c6eab5d9ebd6a44399a90fcd9be56e0
+      internalID: -1637558743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RADL_Book2_2
+      name: RADL_Book2 1_0
       rect:
         serializedVersion: 2
-        x: 299
-        y: 0
-        width: 157
-        height: 137
+        x: 1180
+        y: 2
+        width: 314
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b8d4ace8f85b19448a5adaa7e658a63
-      internalID: 1362176947
+      spriteID: d4870f1115cc2e64c81b932e5408771f
+      internalID: 1247354369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RADL_Book2_3
+      name: RADL_Book2 1_1
       rect:
         serializedVersion: 2
-        x: 489
+        x: 41
         y: 0
-        width: 157
-        height: 125
+        width: 314
+        height: 274
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ddc1df7596a984439008ab5897a35a8
-      internalID: -894944722
+      spriteID: 860abad7a32194047872280e40d56ed9
+      internalID: 1671129709
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RADL_Book2_0: 349777900
-      RADL_Book2_1: 1469296465
-      RADL_Book2_2: 1362176947
-      RADL_Book2_3: -894944722
+      RADL_Book2 1_0: 1247354369
+      RADL_Book2 1_1: 1671129709
+      RADL_Book2 1_2: 696856776
+      RADL_Book2 1_3: -2034365533
+      RADL_Book2 1_4: -1637558743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
